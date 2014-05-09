@@ -26,5 +26,8 @@ namespace PhysX
 
 			const static float Pi = 3.1415926535897932384626433832795f;
 			const static float PiOver2 = Pi/2.0f;
+
+			static Math::Matrix PxMat44ToMatrix(PxMat44 v){ return Math::Matrix::Identity; }
+			static PxMat44 MatrixToPxMat44(Math::Matrix m) { return PxMat44::createIdentity(); }
 	};
 };
